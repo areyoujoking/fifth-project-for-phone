@@ -19,6 +19,7 @@ header{
     width: 100%;
     height: 86.1px;
     top: 16px;
+    z-index: 99999;
 }
 
 .wrapper{
@@ -79,11 +80,32 @@ header{
     color: rgba(255, 255, 255, 0.8);
 }
 
+.p1:hover{
+    color: white;
+    transition-duration: 1s;
+}
+
+.p2:hover{
+    color: white;
+    transition-duration: 1s;
+}
+
+.p3:hover{
+    color: white;
+    transition-duration: 1s;
+}
+
+.p4:hover{
+    color: white;
+    transition-duration: 1s;
+}
+
 .generation{
+    position: relative;
     width: 100%;
     background: url('../assets/images/background-main.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100%;
     height: 849px;
     display: flex;
     justify-content: center;
@@ -91,9 +113,7 @@ header{
 
 }
 
-body{
-    overflow-x: hidden;
-}
+
 
 .p5{
     position: absolute;
@@ -116,6 +136,9 @@ body{
     font-size: 16px;
     line-height: 22px;
     color: #000000;
+    position: absolute;
+    top: 17px;
+
 }
 
 .wrapper button{
@@ -123,7 +146,7 @@ body{
     width: 214px;
     height: 55px;
     left: 1290px;
-    top: 31px;
+    top: 30px;
     background: #5BBFC8;
     border-radius: 5px;
     border: 0;
@@ -137,7 +160,7 @@ body{
 .mobile{
     width: 1050px;
     height: 393px;
-    background-color: aqua;
+    z-index: 11;
 }
 .mobile h1{
     position: absolute;
@@ -145,16 +168,15 @@ body{
     height: 173px;
     left: 429px;
     top: 184px;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
+    font-family:'Manrope', sans-serif;;
     font-size: 64px;
     line-height: 80px;
-    text-transform: uppercase;
     color: #FFFFFF;
-    letter-spacing: -1px;
+    text-transform: uppercase;
 }
 
-.mobile p{
+.p7{
     position: absolute;
     width: 540px;
     height: 104px;
@@ -168,7 +190,199 @@ body{
     color: #FFFFFF;
 }
 
+.p8{
+    position: absolute;
+    left: 19px;
+    width: 1;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
 
+.mobile button{
+    position: absolute;
+    width: 250px;
+    height: 66px;
+    left: 429px;
+    top: 511px;
+    background: #FFD200;
+    border-radius: 5px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.mobile img{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 200px;
+}
+
+.generation::after{
+    content: '';
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(108.11deg, #000000 37.68%, rgba(0, 0, 0, 0) 85.37%);
+    opacity: 0.6;
+}
+
+.racing{
+    position: absolute;
+    width: 1058px;
+    height: 288px;
+    left: 429px;
+    top: 662px;
+    z-index: 9999;
+}
+
+.sedan1{
+    position: absolute;
+    left: 873px;
+    top: 848px;
+    z-index: 9999;
+}
+
+.jeep1{
+    position: absolute;
+    top: 848px;
+    left: 1083px;
+    z-index: 9999;
+}
+
+.truck1{
+    position: absolute;
+    top: 833px;
+    left: 1295px;
+    z-index: 9999;
+}
+
+
+
+.vector1{
+    top: 630px;
+    z-index: 20;
+    position: absolute;
+}
+
+.vector2{
+    position: absolute;
+    z-index: 20;
+    top: 550px;
+    left: 711px;
+}
+
+.vector3{
+    position: absolute;
+    right: 0;
+    top: 600px;
+    z-index: 20;
+    right: -155px;
+}
+
+.parking{
+    position: absolute;
+    width: 979px;
+    height: 569px;
+    left: -37px;
+    top: 1208px;
+}
+
+.action{
+    position: absolute;
+    width: 102px;
+    height: 41px;
+    left: 748px;
+    top: 1104px;
+    background: #FFD300;
+    border-radius: 5px;
+    border: 0;
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.generation1 h2{
+    position: absolute;
+    width: 882px;
+    height: 85px;
+    left: 517px;
+    top: 1041px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #17181C;
+}
+
+.p9{
+    position: absolute;
+    width: 422px;
+    height: 38px;
+    left: 860px;
+    top: 1107px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35px;
+    color: #17181C;
+}
+
+.generation1 ul{
+    position: absolute;
+    width: 493px;
+    left: 1036px;
+    top: 1258px;
+    height: max-content;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 45px;
+    color: #17181C;
+    list-style-image: url('../assets/images/Rectangle\ 57.png');
+}
+
+.telefon{
+    width: 210px;
+    height: 22px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #17181C;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.right{
+    width: 50%;
+    height: 569px;
+    background-color: aqua;
+}
+
+.generation1{
+    width: 100%;
+    height: 927px;
+    background-color: #f6f4f4;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
 
 /*
 @media screen and (max-width: 767px){
